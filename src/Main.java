@@ -5,14 +5,15 @@ public class Main {
         array.insert(20);
         array.insert(30);
         array.insert(40);
-        array.insert(50);
-        array.insert(60);
-        array.insert(70);
-        array.insert(80);
-        System.out.println(array.length());
-        array.removeAt(4);
-        System.out.println(array.length());
+
+        array.insertAt(25, 4);
+
+        array.insertAt(25, 2);
+
+
+
         array.print();
+
     }
 
 }
