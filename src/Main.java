@@ -1,19 +1,19 @@
+import LinkedList.LinkedList;
+
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
-        Array array = new Array();
-        array.insert(10);
-        array.insert(20);
-        array.insert(30);
-        array.insert(40);
+      LinkedList linkedList =  new  LinkedList();
+      linkedList.addLast(10);
+      linkedList.addLast(20);
+      linkedList.addLast(30);
+      linkedList.addLast(40);
+      linkedList.addLast(50);
+      linkedList.addLast(60);
 
-        array.insertAt(25, 4);
-
-        array.insertAt(25, 2);
-
-
-
-        array.print();
-
+        var list = LinkedList.createWithLoop();
+        System.out.println(list.hasLoop());
     }
 
 }
