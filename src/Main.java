@@ -1,22 +1,26 @@
-import LinkedList.LinkedList;
-import Stack.Expression;
-import Stack.Stack;
-import Stack.StringReverser;
-
-import java.util.Arrays;
-
+import Queue.ArrayQueue;
 public class Main {
     public static void main(String[] args) {
-       Stack stack =  new Stack(3);
-//       stack.push(10);
-//        stack.push(20);
-//        stack.push(30);
-//        stack.push(40);
-//        stack.push(50);
-//        stack.push(60);
-//        stack.push(70);
-        var value = stack.peek();
-        System.out.println(value);
+        ArrayQueue queue = new ArrayQueue(5);
+        queue.enqueue(10);
+        queue.enqueue(20);
+        queue.enqueue(30);
+        queue.enqueue(40);
+        queue.enqueue(50);
+        System.out.println(queue.dequeue());
+        System.out.println(queue.dequeue());
+        System.out.println(queue.dequeue());
+        System.out.println(queue.dequeue());
+        System.out.println(queue.dequeue());
+        queue.enqueue(60);
+        queue.enqueue(70);
+        queue.enqueue(80);
+        queue.enqueue(90);
+        System.out.println(queue.dequeue());
+
+
+        System.out.println(queue);
+
     }
 
 }
