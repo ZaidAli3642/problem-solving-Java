@@ -1,19 +1,13 @@
 import LinkedList.LinkedList;
+import Stack.Expression;
+import Stack.StringReverser;
 
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-      LinkedList linkedList =  new  LinkedList();
-      linkedList.addLast(10);
-      linkedList.addLast(20);
-      linkedList.addLast(30);
-      linkedList.addLast(40);
-      linkedList.addLast(50);
-      linkedList.addLast(60);
-
-        var list = LinkedList.createWithLoop();
-        System.out.println(list.hasLoop());
+        Expression expression = new Expression();
+        System.out.println(expression.isBalanced("{a * (a+b) + b}"));
     }
 
 }
